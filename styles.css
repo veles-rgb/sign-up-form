@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-side {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imgs/left-background.jpg);
+    background-size: 30vw 100vh;
+    user-select: none;
+    pointer-events: none;
+}
+
+.logo-text {
+    font-family: "Anton SC", sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 4px 4px 4px #497F1D;
+}
+
+.right-side {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(38, 38, 38);
+}
+
+.fake-warning {
+    color: #497F1D;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 1000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 8px 5px #FFFFFF;
+    box-shadow: 0px 0px 8px 5px #FFFFFF;
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-bottom a {
+    color: #497F1D;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+label {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+input {
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+::placeholder {
+    color: #497F1D;
+    opacity: 0.5;
+}
+
+input:focus {
+    border-color: rgb(73, 150, 245);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+
+input:valid {
+    border-color: #497F1D;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #497F1D;
+    font-size: 18px;
+    font-weight: 1000;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
