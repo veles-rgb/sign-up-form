@@ -142,3 +142,8 @@ input[type=submit] {
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+.form-item span {
+    color: red;
+    font-weight: 500;
+}
